@@ -1,0 +1,80 @@
+.outerflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.display {
+  border: 0.3em solid rgb(0, 0, 0);
+  background-color: rgb(240, 238, 238);
+  padding: 1em;
+  border-radius: 2.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:
+    1fr
+    1fr 1fr 1fr 1fr 1fr;
+}
+.btn {
+  border: none;
+  border-radius: 3em;
+  background-color: rgb(227, 227, 227);
+  box-shadow: 0em 0.2em 0.2em 0.2em black;
+  padding: 0.3em;
+  margin: 0.2em;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+.answer {
+  padding-top: 0.5em;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding-bottom: 0.5em;
+  text-align: right;
+  border-radius: 1em;
+}
+#string {
+  font-size: 2em;
+}
+.first {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.second {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.third {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.fourth {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.fifth {
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+.symbol {
+  background-color: rgb(169, 189, 221);
+}
+.equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.plus {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(130, 130, 130);
+  transition-duration: 0.3s;
+}
+button:active {
+  opacity: 0.6;
+}
