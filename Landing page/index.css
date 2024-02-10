@@ -16,7 +16,7 @@ nav {
   color: #000000;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 1em;
 }
 nav img {
