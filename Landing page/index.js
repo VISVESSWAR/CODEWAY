@@ -35,7 +35,7 @@ buttons.forEach((button) => {
       }
       text.innerHTML = infos[index];
       console.log(infos[index], text.innerHTML);
-      photo.src = `/images/${images[index]}.jpg`;
+      photo.src = `images/${images[index]}.jpg`;
       console.log(photo.src);
       //container.style.background = `url("${images[index]}.jpg") center no-repeat`;
     } else {
@@ -45,7 +45,7 @@ buttons.forEach((button) => {
       }
       text.innerHTML = infos[index];
       console.log(infos[index], text.innerHTML);
-      photo.src = `/images/${images[index]}.jpg`;
+      photo.src = `images/${images[index]}.jpg`;
       console.log(photo.src);
       //container.style.background = `url("${images[index]}.jpg") center no-repeat`;
     }
