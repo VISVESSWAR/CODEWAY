@@ -231,7 +231,7 @@ body {
   border-radius: 2em;
   margin: 1.5em;
   margin-top: 8%;
-  background: url(/images/new\ to\ chess2.jpeg) center no-repeat;
+  background: url(images/new\ to\ chess2.jpeg) center no-repeat;
   height: 95vh;
   opacity: 0.78;
   position: relative;
@@ -370,7 +370,7 @@ body {
   align-items: center;
   padding: 0em 0.5em;
   height: 90vh;
-  background: url(/images/chess\ starting\ position.jpg) center no-repeat;
+  background: url(images/chess\ starting\ position.jpg) center no-repeat;
   opacity: 0.8;
 }
 .PSP {
@@ -843,7 +843,7 @@ body {
     margin-bottom: 4em;
     margin-top: 45%;
     margin-left: 4%;
-    background: url(/images/new\ to\ chess4.jpeg) center no-repeat;
+    background: url(images/new\ to\ chess4.jpeg) center no-repeat;
     width: 92%;
     opacity: 0.77;
     height: 75vh;
