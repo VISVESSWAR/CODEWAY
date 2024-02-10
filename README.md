@@ -1,3 +1,3 @@
 Welcome to Github pages
 
- https://visvesswar.github.io/CODEWAY/
+ https://visvesswar.github.io/CODEWAY/portfolio
