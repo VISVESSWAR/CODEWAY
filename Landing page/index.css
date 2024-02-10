@@ -1,0 +1,1087 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* 
+start
+ of
+  navbar
+  style
+*/
+/*rgb(153 181 255); */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  display: flex;
+  background-color: rgb(77, 124, 218);
+  color: #000000;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  margin-bottom: 1em;
+}
+nav img {
+  height: 2em;
+  width: 2em;
+}
+.logo {
+  font-size: 2em;
+}
+.logo-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 2.6em;
+  width: 2.4em;
+  border-radius: 15px;
+  padding: 0.3em 0.3em;
+}
+.logo a:hover {
+  font-size: 1em;
+  color: white;
+}
+.logo a {
+  color: #000000;
+  text-decoration: none;
+  padding-left: 0.5em;
+}
+.menu-items {
+  font-size: 1.6rem;
+}
+.menu-items li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+}
+.menu-items li:hover {
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: 10s;
+}
+.menu-line {
+  height: 4px;
+  width: 30px;
+  background-color: rgb(244, 238, 238);
+  margin-bottom: 3px;
+}
+.menu-items button {
+  border: none;
+  padding: 0.5em 0.4em;
+  margin-left: 0em;
+  font-size: 0.9em;
+  font-weight: 550;
+  background-color: rgb(77, 124, 218);
+  border-radius: 1em;
+}
+
+.menu-items button:hover {
+  cursor: pointer;
+  /* color: white; */
+  background-color: white;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger {
+  display: none;
+}
+.menu-items a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 0.1em 0.2em;
+}
+/* .menu-items a:visited {
+  color: rgb(23, 23, 141);
+} */
+.menu-items a:hover {
+  color: rgb(250, 250, 250);
+}
+@media (max-width: 1204px) {
+  .hamburger {
+    top: 3.5em;
+    right: 1.5em;
+    position: absolute;
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .logo {
+    align-self: flex-start;
+    margin: 0.3em 0 0.5em 0.3em;
+  }
+  nav li {
+    display: block;
+    padding: 0.2rem;
+  }
+  .menu-items {
+    display: none;
+    text-align: center;
+    top: 4em;
+    right: 9em;
+    margin-top: 10em;
+    margin-right: 0em;
+    height: 60vh;
+  }
+  .menu-items {
+    display: none;
+  }
+
+  .menu-items li {
+    display: block;
+  }
+
+  /* .space {
+    margin-bottom: 4em;
+  } */
+  .showlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    justify-content: center;
+    margin: 0;
+  }
+}
+/* 
+start
+ of
+  carousel 
+  style
+*/
+.carousel {
+  height: 80vh;
+  width: 50%;
+  /* border: 0.2em solid black; */
+  margin: 5em 3em 1em 0em;
+  margin-left: 25%;
+  box-shadow: -0.2em -0.3em 0.3em 0.2em;
+  position: relative;
+  /* background: url("you.jpg") center no-repeat; */
+  background-color: rgb(255, 255, 255);
+  border-radius: 2em;
+}
+.btn-left {
+  position: absolute;
+  font-size: 1em;
+  top: 50%;
+  left: 0.5%;
+  padding: 0.5em;
+  border-radius: 2em;
+  background-color: rgb(77, 124, 218);
+  transform: translateY(calc(-50%));
+  cursor: pointer;
+}
+.btn-right {
+  position: absolute;
+  font-size: 1em;
+  top: 50%;
+  right: 0.5%;
+  padding: 0.5em;
+  border-radius: 2em;
+  background-color: rgb(77, 124, 218);
+  transform: translateY(calc(-50%));
+  cursor: pointer;
+}
+.slider-text {
+  font-size: 0.8em;
+  font-weight: 700;
+  display: flex;
+  margin: 1em;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  justify-content: center;
+  background-color: rgb(77, 124, 218);
+  border-radius: 2em;
+  padding: 1em;
+  color: aliceblue;
+}
+.slider-img {
+  margin-left: 26%;
+  margin-top: 5%;
+  /* margin-bottom: 5%; */
+  height: 60%;
+  width: 50%;
+  border: 0.5rem;
+  border-radius: 0.2em;
+}
+.btn-right i,
+.btn-left i {
+  color: aliceblue;
+}
+/* 
+end 
+of 
+carousel 
+style
+*/
+
+body {
+  /* background-image: url(chess\ starting\ position.jpg); */
+  background-color: rgb(245, 245, 245);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2em;
+  margin: 1.5em;
+  margin-top: 8%;
+  background: url(/images/new\ to\ chess2.jpeg) center no-repeat;
+  height: 95vh;
+  opacity: 0.78;
+  position: relative;
+}
+.home-main {
+  padding: 1em 2em 1em 4em;
+  /* background-color: rgb(77, 124, 218); */
+  border-radius: 2em;
+  width: 50%;
+  margin-right: 4%;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  color: white;
+  margin-left: 45%;
+}
+.msg {
+  font-size: 1.8em;
+}
+
+.home-sub {
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+}
+.home1 {
+  font-size: 9em;
+  font-weight: 600;
+}
+.home2 {
+  font-size: 2em;
+  padding: 0;
+}
+.home-second img {
+  margin: 0em 5em;
+  margin-top: 8em;
+  height: 20em;
+  width: 30em;
+  border-radius: 5em;
+}
+.check-span {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(50, 98, 194);
+}
+
+.about {
+  font-size: 1.8em;
+  margin: 2em 0.8em;
+}
+/* .about h1 {
+  margin-left: 4em;
+} */
+#about {
+  padding: 1em 0em;
+  padding-top: 5em;
+}
+.about-sub {
+  display: flex;
+  flex-direction: row;
+  margin: 2.5em 2em;
+}
+.about-sub div {
+  display: flex;
+  flex-direction: column;
+}
+.about-sub img {
+  border-radius: 3em;
+  height: 12em;
+  width: 20em;
+  margin: 0 1em;
+}
+.about-sub {
+  padding: 1em 1em;
+  /* background-color: rgb(77, 124, 218); */
+}
+
+.lessons {
+  font-size: 1.8em;
+  padding: 1.5em;
+  border-radius: 1em;
+  margin: 0 1em;
+  /* background-color: rgb(77, 124, 218); */
+}
+.heading {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+.heading span {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: rgb(50, 98, 194);
+}
+.finding-weakness .heading {
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+  margin-top: 15%;
+}
+.finding-weakness .heading span {
+  color: rgb(50, 98, 194);
+}
+.finding-weakness {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3.5em;
+}
+.message {
+  width: 50%;
+  margin-left: 2em;
+}
+.factors {
+  display: flex;
+  align-items: center;
+  margin-left: 4em;
+  margin-top: 6%;
+  background-color: rgb(77, 124, 218);
+  border-radius: 1.5em;
+}
+.factors ul {
+  list-style-type: none;
+  margin-right: 1.5em;
+}
+.factors li {
+  color: rgb(246, 249, 255);
+  padding: 0.2em;
+}
+.Advertise {
+  /* background-color: rgb(77, 124, 218); */
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 3.7em;
+  margin: 1.5em 1em;
+  align-items: center;
+  padding: 0em 0.5em;
+  height: 90vh;
+  background: url(/images/chess\ starting\ position.jpg) center no-repeat;
+  opacity: 0.8;
+}
+.PSP {
+  font-size: 1.5em;
+  font-weight: 600;
+
+  padding: 0;
+}
+.Advertise p {
+  margin: 0.3em;
+}
+
+.Advertise2 {
+  background-color: rgb(77, 124, 218);
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(224, 224, 224);
+  font-size: 3.2em;
+  font-weight: 600;
+  margin: 1.5em 1em;
+  align-items: center;
+  padding: 1em 0.5em;
+  height: 80vh;
+  /* background: url(/images/statistical\ improvement.webp) center no-repeat; */
+  opacity: 1;
+}
+.Advertise2 p,
+.Advertise2 div {
+  margin: 0;
+  padding: 0.3em;
+  text-align: center;
+}
+.Advertise2 .percent {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.Advertise2 .note {
+  font-size: 0.55em;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  padding-top: 0.6em;
+  color: rgb(213, 215, 216);
+}
+.coaches {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 4%;
+  height: 90vh;
+  padding-top: 7em;
+}
+.coaches .left {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 1em 0.3em;
+  padding-left: 1.2em;
+  background-color: rgb(255, 255, 255);
+  font-size: 2.8em;
+  width: 50%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.coaches .dream {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.coaches .message {
+  font-size: 0.5em;
+}
+.coaches button {
+  border: none;
+  font-size: 0.5em;
+  background-color: rgb(77, 124, 218);
+  color: white;
+  padding: 1em;
+  width: 14em;
+  margin: 1em;
+  margin-top: 2em;
+  margin-left: 4em;
+  border-radius: 2em;
+  font-weight: 540;
+}
+
+.left button:hover {
+  cursor: pointer;
+}
+.right {
+  width: 50%;
+  border-radius: 2em;
+  /* background-color: rgb(252, 252, 252); */
+}
+.right img {
+  height: 25em;
+  border-radius: 1.5em;
+  margin: 20% 17%;
+}
+.message span {
+  font-weight: 600;
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+
+.plans .head {
+  font-size: 5em;
+  font-weight: 600;
+  padding-top: 1em;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.inner-plan {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(77, 124, 218);
+  margin: 1em;
+  width: 33%;
+  height: 95vh;
+  font-size: 1.5em;
+  border-radius: 2em;
+  color: aliceblue;
+}
+
+/* .card:hover {
+  background-color: aliceblue;
+  color: rgb(33, 92, 209);
+} */
+
+.card .cost {
+  font-weight: 550;
+  font-size: 1.6em;
+  padding-left: 0.6em;
+  color: rgb(244, 244, 244);
+}
+
+.card .membership {
+  font-size: 1.7em;
+  padding-left: 0.6em;
+  font-weight: 500;
+}
+
+.card div {
+  padding: 0.5em;
+  font-size: 1em;
+}
+.card div p {
+  font-weight: 600;
+}
+.cost p {
+  color: rgb(234, 234, 234);
+  font-size: 0.6em;
+  padding: 0;
+}
+.alt {
+  background-color: rgb(228, 228, 228);
+  color: black;
+}
+.cost-alt {
+  font-weight: 550;
+  font-size: 2em;
+  padding-left: 0.6em;
+  color: rgb(0, 0, 0);
+}
+.cost-alt p {
+  color: rgb(89, 88, 88);
+  font-size: 0.6em;
+  padding: 0;
+}
+
+.alt .cost-alt {
+  color: #190707;
+}
+
+.faq {
+  background-color: rgb(218, 220, 222);
+  margin: 2em;
+  padding: 1em;
+  border-radius: 1.5em;
+  margin-bottom: 6em;
+  padding-bottom: 5em;
+}
+.block {
+  border-radius: 2em;
+  background-color: white;
+  padding: 0.5em;
+  margin: 1em;
+  font-size: 1.5em;
+}
+.qn {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: 540;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.qn::after {
+  content: "\002B";
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  right: 2rem;
+  transition: transform 0.2s ease-in-out;
+  color: rgb(77, 124, 218);
+}
+
+.block::after {
+  color: rgb(77, 124, 218);
+}
+
+.qn.active {
+  color: rgb(20, 79, 198);
+  font-weight: 600;
+}
+.qn.active::after {
+  content: "\2212";
+  color: rgb(77, 124, 218);
+  /* transform: rotate(45deg); */
+}
+
+.faq-body {
+  display: none;
+  padding: 1.5rem;
+}
+
+.qn.active + .faq-body {
+  display: block;
+}
+
+.block:hover {
+  cursor: pointer;
+}
+#title {
+  font-size: 3em;
+  margin-left: 1em;
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(77, 124, 218);
+  color: rgb(239, 239, 239);
+  padding: 1em;
+  margin-top: 1em;
+  font-size: 2em;
+  align-items: center;
+}
+.connect {
+  text-align: left;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+.download {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0.5em; */
+}
+.links a {
+  margin-left: 0.5rem;
+  color: aliceblue;
+  padding: 0.4em;
+}
+.contact a:hover {
+  cursor: pointer;
+  color: #190707;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.follow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+/* max width:1200px */
+
+@media (max-width: 1200px) {
+  .plans {
+    margin-top: 0%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
+  .inner-plan {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 0.5em;
+    width: 95%;
+    height: 100%;
+    font-size: 1.35em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+  }
+  .qn {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+  }
+  .qn::after {
+    font-size: 2.4rem;
+    right: 0.5rem;
+  }
+  .block {
+    margin: 1.5em 0;
+    font-size: 1.8rem;
+  }
+  .card {
+    margin-left: 2rem;
+    font-size: 2.3rem;
+  }
+
+  .coaches {
+    flex-direction: column;
+    width: 89vw;
+    height: 100%;
+  }
+  .coaches .left {
+    width: 90%;
+  }
+  .coaches .message {
+    font-size: 0.8em;
+    width: 80%;
+  }
+  .coaches button {
+    font-size: 0.9em;
+  }
+  .right img {
+    height: 30em;
+    width: 45em;
+    border-radius: 1.5em;
+    margin: 20% 35%;
+  }
+
+  .Advertise2 {
+    height: 70vh;
+  }
+  .Advertise2 .note {
+    font-size: 0.8em;
+  }
+  .Advertise {
+    font-size: 3.4rem;
+  }
+  .Advertise p {
+    display: block;
+    padding: 0.2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel {
+    height: 50vh;
+    width: 90%;
+    margin: 5em 8% 1em 8%;
+  }
+  .slider-img {
+    margin-top: 7%;
+  }
+  .slider-text {
+    font-size: 2rem;
+  }
+  .lessons {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+
+  .finding-weakness {
+    flex-direction: column;
+  }
+
+  .message {
+    width: 100%;
+    margin-left: 0;
+  }
+  .factors {
+    margin-left: 0;
+  }
+  #about {
+    padding: 0;
+  }
+  .about {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .about-sub {
+    font-size: 2.5rem;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .about-sub img {
+    border-radius: 3em;
+    height: 15em;
+    width: 22em;
+    margin: 0 1em;
+    margin-top: 15%;
+    padding-left: 0;
+    margin-left: -2%;
+  }
+  .home {
+    margin: 0;
+    padding-bottom: 0;
+    padding: 0;
+  }
+
+  .home-main {
+    margin-top: 37%;
+  }
+  .logo {
+    font-size: 3.5em;
+  }
+  .menu-line {
+    height: 0.5em;
+    width: 4em;
+  }
+  .hamburger {
+    top: 5.5em;
+    right: 3.5em;
+  }
+  /* .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+    margin: 0;
+  } */
+  .menu-items li a,
+  .menu-items li button {
+    font-size: 3rem;
+  }
+}
+
+/* max width:800px */
+@media (max-width: 800px) {
+  .home {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4em;
+    margin-top: 45%;
+    margin-left: 4%;
+    background: url(/images/new\ to\ chess4.jpeg) center no-repeat;
+    width: 92%;
+    opacity: 0.77;
+    height: 75vh;
+  }
+  .home-main {
+    margin-top: 12%;
+    margin-left: 17%;
+    width: 100%;
+    opacity: 1;
+  }
+  .msg {
+    font-size: 0.9em;
+    padding-left: 12.5%;
+    padding-top: 20%;
+  }
+  .home1 {
+    font-size: 5em;
+  }
+  .home2 {
+    font-size: 1.1em;
+  }
+
+  .about-sub {
+    font-size: 1rem;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.5em 0;
+    padding-left: 0.5em;
+  }
+  .menu-line {
+    height: 4px;
+    width: 30px;
+  }
+  .hamburger {
+    top: 3.5em;
+    right: 1.5em;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+  .about {
+    font-size: 1.3em;
+  }
+  .about-sub img {
+    border-radius: 2em;
+    height: 10em;
+    width: 15em;
+    margin: 0;
+    margin-top: 0.5em;
+    margin-left: 13%;
+  }
+
+  .about-sub h1 {
+    margin: 0;
+    text-align: center;
+  }
+  .about-sub p {
+    padding-left: 2em;
+  }
+  .menu-items li a,
+  .menu-items li button {
+    font-size: 1.5rem;
+  }
+  .finding-weakness {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .lessons {
+    padding: 0.6em;
+    font-size: 1em;
+  }
+
+  .message {
+    width: 80vw;
+    margin-left: 5%;
+  }
+
+  .heading span {
+    font-size: 1.3em;
+  }
+  .finding-weakness .heading {
+    font-size: 1em;
+    margin-top: 5%;
+  }
+
+  .factors {
+    margin-left: 0;
+  }
+
+  .heading {
+    font-size: 1em;
+  }
+
+  .carousel {
+    height: 50vh;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slider-img {
+    margin-left: 21%;
+    margin-top: 8%;
+    /* margin-bottom: 5%; */
+    height: 60%;
+    width: 60%;
+    border: 0.5rem;
+    border-radius: 0.2em;
+  }
+
+  .card div {
+    font-size: 1rem;
+  }
+  .Advertise {
+    font-size: 1.2em;
+    width: 90vw;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .Advertise p {
+    display: block;
+    padding: 0.2em;
+    width: 100%;
+    text-align: center;
+  }
+  .Advertise2 {
+    font-size: 1.6em;
+    margin-top: 3em;
+    padding: 0 0.5em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .Advertise2 .note {
+    padding-top: 3em;
+    font-size: 0.55em;
+  }
+
+  .plans .head {
+    font-size: 3.5em;
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  .slider-text {
+    font-size: 1rem;
+  }
+  .Advertise2 .note1 {
+    padding-top: 0em;
+  }
+
+  .logo a {
+    padding-left: 0;
+  }
+
+  .coaches {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 2em;
+  }
+  .coaches .left {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 0em 0em;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    width: 100%;
+    margin-left: 0;
+  }
+  .coaches .dream {
+    font-size: 0.9em;
+    padding: 1em;
+    padding-bottom: 0.5em;
+  }
+  .coaches .message {
+    font-size: 0.7em;
+  }
+  .coaches button {
+    font-size: 0.7em;
+  }
+  .right img {
+    height: 14em;
+    width: 18em;
+    border-radius: 1.5em;
+    margin: 0;
+    margin-top: 2em;
+    margin-left: 15%;
+  }
+  .plans {
+    margin-top: 0%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
+  .inner-plan {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 0.5em;
+    width: 95%;
+    height: 100%;
+    font-size: 1.35em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    margin-left: 0.5rem;
+  }
+
+  .faq {
+    margin: 0.6em;
+    padding-bottom: 2em;
+    margin-bottom: 5em;
+  }
+  #title {
+    margin-left: 0;
+    font-size: 1.4em;
+  }
+  .block {
+    margin: 1.5em 0;
+    font-size: 1em;
+  }
+  .qn {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .qn::after {
+    font-size: 1.5rem;
+    right: 0.5rem;
+  }
+  .contact {
+    font-size: 0.9em;
+  }
+
+  .menu-items {
+    margin-top: 0;
+  }
+}
