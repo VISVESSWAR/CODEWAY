@@ -595,7 +595,8 @@ hr {
   height: 100vh;
 } */
 nav {
-  /* position: fixed; */
+  position: fixed;
+  z-index:1;
   display: flex;
   background-color: rgb(153 181 255);
   color: #000000;
